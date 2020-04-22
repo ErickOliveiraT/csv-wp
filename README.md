@@ -20,8 +20,8 @@ csvwp.printLines('example.csv', options)
 //Returns an Array with all lines
 let lines = csvwp.getLines('example.csv', options);
 
-//Returns an Array with a single line 5
-let line = csvwp.getLines('example.csv', 5, options);
+//Returns an Array with the 5th line
+let line = csvwp.getSingleLine('example.csv', 5, options);
 
 //Returns .csv header (line 0)
 let header = csvwp.getHeader('example.csv', options);
