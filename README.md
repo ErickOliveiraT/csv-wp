@@ -30,7 +30,7 @@ let header = csvwp.getHeader('example.csv', options);
 let atr = csvwp.getAttribute('example.csv', 'CONTACT', options);
 
 //Find rows by searching a (key,value) pair
-let found = csvwp.find('backup.csv', 'CONTACT', 'example@example.com', options);
+let found = csvwp.find('example.csv', 'CONTACT', 'example@example.com', options);
 
 //Append a row to a .csv file
 const data = ['03/24/2020 08:26','Testing','example@example.com','+553298','Verified'];
