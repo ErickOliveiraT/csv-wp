@@ -1,0 +1,27 @@
+{
+  "name": "csv-wp",
+  "version": "1.0.0",
+  "description": "A CSV writer and parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickOliveiraT/csv-wp.git"
+  },
+  "keywords": [
+    "csv",
+    "parser",
+    "writer"
+  ],
+  "author": "Érick Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErickOliveiraT/csv-wp/issues"
+  },
+  "homepage": "https://github.com/ErickOliveiraT/csv-wp#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
