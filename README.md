@@ -1,5 +1,9 @@
 # csv-wp
 A simple CSV writer and parser
+#### Installation
+ ```
+$ npm install csv-wp
+ ```
 #### Usage:
 ```javascript
 const csvwp = require('csv-wp')
