@@ -1,6 +1,6 @@
 {
   "name": "csv-wp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CSV writer and parser",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/ErickOliveiraT/csv-wp.git"
   },
   "keywords": [
+    "csv-wp",
     "csv",
     "parser",
     "writer"
