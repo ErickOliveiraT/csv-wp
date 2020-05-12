@@ -133,18 +133,18 @@ function appendRow(filename, row, options) {
         }
     }
     try {
-        if(fs.existsSync(filename)) { 
-          row.forEach((field, index) => {
-            if (index == row.length-1) fs.appendFileSync(filename, field+'\n');
-            else fs.appendFileSync(filename, field+options.delimiter);
-          });
+        if (fs.existsSync(filename)) {
+            row.forEach((field, index) => {
+                if (index == row.length - 1) fs.appendFileSync(filename, field + '\n');
+                else fs.appendFileSync(filename, field + options.delimiter);
+            });
         } else { //Does not exist
             throw new Error('Invalid filename');
         }
     }
     catch (err) {
         console.log(err);
-    } 
+    }
 }
 
 function writeRow(filename, row, options) {
@@ -155,20 +155,16 @@ function writeRow(filename, row, options) {
         }
     }
     try {
-        if(fs.existsSync(filename)) {
-          let to_write = new String(); 
-          row.forEach((field, index) => {
-            if (index == row.length-1) to_write += field;
-            else to_write += field+options.delimiter;
-          });
-          fs.writeFileSync(filename, to_write+'\n');
-        } else { //Does not exist
-            throw new Error('Invalid filename');
-        }
+        let to_write = new String();
+        row.forEach((field, index) => {
+            if (index == row.length - 1) to_write += field;
+            else to_write += field + options.delimiter;
+        });
+        fs.writeFileSync(filename, to_write + '\n');
     }
     catch (err) {
         console.log(err);
-    } 
+    }
 }
 
 function writeCSV(filename, header, data, options) {
@@ -178,7 +174,7 @@ function writeCSV(filename, header, data, options) {
             delimiter: ','
         }
     }
-    writeRow(filename, header, options)
+    writeRow(filename, header, options);
     data.forEach((row) => {
         appendRow(filename, row, options);
     })
